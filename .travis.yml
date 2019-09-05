@@ -4,7 +4,7 @@ services:
 
 
 before_install:
-  - docker build -t Mahmoud-Ghonim/docker-react -f Dockerfile.dev .
+  - docker build -t mahmoud-ghonim/docker-react -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true Mahmoud-Ghonim/docker-react npm run test
